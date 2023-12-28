@@ -13,7 +13,23 @@
 		81073FA52B3DBFAD00C6A22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81073FA32B3DBFAD00C6A22E /* Main.storyboard */; };
 		81073FA72B3DBFAE00C6A22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81073FA62B3DBFAE00C6A22E /* Assets.xcassets */; };
 		81073FAA2B3DBFAE00C6A22E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81073FA82B3DBFAE00C6A22E /* LaunchScreen.storyboard */; };
+		81073FB32B3DBFE600C6A22E /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81073FB22B3DBFE600C6A22E /* Razorpay.xcframework */; };
+		81073FB42B3DBFE600C6A22E /* Razorpay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81073FB22B3DBFE600C6A22E /* Razorpay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81073FB52B3DBFE600C6A22E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				81073FB42B3DBFE600C6A22E /* Razorpay.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		81073F9A2B3DBFAD00C6A22E /* razSt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = razSt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		81073FA62B3DBFAE00C6A22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81073FA92B3DBFAE00C6A22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81073FAB2B3DBFAE00C6A22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81073FB22B3DBFE600C6A22E /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Razorpay.xcframework; path = ../../../Downloads/Razorpay.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81073FB32B3DBFE600C6A22E /* Razorpay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				81073F9C2B3DBFAD00C6A22E /* razSt */,
 				81073F9B2B3DBFAD00C6A22E /* Products */,
+				81073FB12B3DBFE600C6A22E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = razSt;
 			sourceTree = "<group>";
 		};
+		81073FB12B3DBFE600C6A22E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81073FB22B3DBFE600C6A22E /* Razorpay.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				81073F962B3DBFAD00C6A22E /* Sources */,
 				81073F972B3DBFAD00C6A22E /* Frameworks */,
 				81073F982B3DBFAD00C6A22E /* Resources */,
+				81073FB52B3DBFE600C6A22E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
